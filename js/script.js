@@ -193,29 +193,46 @@ document.addEventListener('DOMContentLoaded', function() {
     // 添加事件监听器
     generateBtn.addEventListener('click', generatePhoneNumbers);
     copyAllBtn.addEventListener('click', copyAllNumbers);
+
     
-    // 平滑滚动
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // 增强：导航平滑滚动与激活态
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            console.log("Scrolling to:", targetId); // 调试信息
+            if (!targetId || targetId === '#') return;
             const targetElement = document.querySelector(targetId);
-            
             if (targetElement) {
-                console.log("Target found:", targetElement); // 调试信息
-                setTimeout(() => {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }, 100);
-            } else {
-                console.log("Target not found:", targetId); // 调试信息
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
             }
+            // 切换激活态
+            navLinks.forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
         });
     });
+
+
+
+    // 滚动自动高亮当前栏目
+    const sections = ['#home', '#features', '#how-it-works', '#faq']
+        .map(id => document.querySelector(id))
+        .filter(Boolean);
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const link = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+                if (link) {
+                    navLinks.forEach(a => a.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            }
+        });
+    }, { threshold: 0.35, rootMargin: '-80px 0px -50%' });
+
+    sections.forEach(sec => observer.observe(sec));
 });

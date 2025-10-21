@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="रैंडम फोन नंबर जनरेट करें — US, Canada, India, Australia। टेस्टिंग और OTP सत्यापन के लिए मुफ्त अस्थायी नंबर। तुरंत मान्य फॉर्मेट।">
+    <meta name="keywords" content="फोन नंबर जनरेटर, रैंडम फोन नंबर, टेस्ट नंबर, वर्चुअल फोन नंबर, US टेम्प नंबर, OTP सत्यापन">
+    <title>रैंडम फोन नंबर जनरेटर | US टेम्प नंबर और टेस्ट फोन नंबर</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Phone<span>Gen</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">मुखपृष्ठ</a></li>
+                    <li><a href="#features">फ़ीचर्स</a></li>
+                    <li><a href="#how-it-works">यह कैसे काम करता है</a></li>
+                    <li><a href="#faq">सामान्य प्रश्न</a></li>
+                    <li class="language-selector">
+                        <a href="#">हिन्दी</a>
+                        <div class="language-dropdown">
+                            <a href="../index.html">English</a>
+                            <a href="index.html">हिन्दी (Hindi)</a>
+                            <a href="../fil/index.html">Filipino</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>किसी भी देश के लिए रैंडम फोन नंबर जनरेट करें</h2>
+                <p>टेस्टिंग, डेवलपमेंट और डेमो के लिए फ़ॉर्मेटेड फोन नंबर जल्दी बनाएँ</p>
+                <div class="cta-buttons">
+                    <a href="#generator" class="btn primary-btn">जनरेट करना शुरू करें</a>
+                    <a href="#how-it-works" class="btn secondary-btn">और जानें</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-illustration"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="generator" class="generator">
+        <div class="container">
+            <div class="section-header">
+                <h2>फोन नंबर जनरेटर</h2>
+                <p>देश और मात्रा चुनें ताकि तुरंत फ़ॉर्मेटेड रैंडम फोन नंबर जनरेट हों</p>
+            </div>
+            <div class="generator-form">
+                <div class="form-group">
+                    <label for="country">देश/क्षेत्र</label>
+                    <select id="country">
+                        <option value="CN">China (+86)</option>
+                        <option value="US">United States (+1)</option>
+                        <option value="GB">United Kingdom (+44)</option>
+                        <option value="JP">Japan (+81)</option>
+                        <option value="KR">South Korea (+82)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">मात्रा</label>
+                    <input type="number" id="quantity" min="1" max="50" value="5">
+                </div>
+                <div class="form-group">
+                    <label for="format">फ़ॉर्मेट</label>
+                    <select id="format">
+                        <option value="INTERNATIONAL">अंतरराष्ट्रीय फ़ॉर्मेट</option>
+                        <option value="NATIONAL">राष्ट्रीय फ़ॉर्मेट</option>
+                        <option value="E164">E.164 फ़ॉर्मेट</option>
+                    </select>
+                </div>
+                <button id="generate-btn" class="btn primary-btn">नंबर जनरेट करें</button>
+            </div>
+            <div class="result-container">
+                <div class="result-header">
+                    <h3>परिणाम</h3>
+                    <button id="copy-all-btn" class="btn small-btn">सभी कॉपी करें</button>
+                </div>
+                <div id="result-list" class="result-list">
+                    <p class="empty-result">प्रारंभ करने के लिए "नंबर जनरेट करें" पर क्लिक करें</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>मुख्य फीचर्स</h2>
+                <p>हमारा फोन नंबर जनरेटर कई उपयोगी फीचर्स प्रदान करता है</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon globe-icon"></div>
+                    <h3>वैश्विक कवरेज</h3>
+                    <p>कई देशों और क्षेत्रों के लिए फोन नंबर फॉर्मेट सपोर्ट करता है</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon format-icon"></div>
+                    <h3>एकाधिक फॉर्मेट</h3>
+                    <p>अंतरराष्ट्रीय, राष्ट्रीय और E.164 फॉर्मेट सपोर्ट करता है</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon valid-icon"></div>
+                    <h3>फॉर्मेट सत्यापन</h3>
+                    <p>जनरेट किए गए नंबर देश-विशिष्ट फोन नंबर नियमों का पालन करते हैं</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon copy-icon"></div>
+                    <h3>वन-क्लिक कॉपी</h3>
+                    <p>आसानी से व्यक्तिगत नंबर या सभी परिणाम एक साथ कॉपी करें</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>यह कैसे काम करता है</h2>
+                <p>सिर्फ तीन सरल चरणों में आवश्यक फोन नंबर जनरेट करें</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>देश चुनें</h3>
+                    <p>ड्रॉपडाउन मेनू से अपना इच्छित देश या क्षेत्र चुनें</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>मात्रा और फॉर्मेट सेट करें</h3>
+                    <p>कितने नंबर जनरेट करने हैं और किस फॉर्मेट में, चुनें</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>जनरेट करें और उपयोग करें</h3>
+                    <p>जनरेट बटन दबाएँ और आवश्यक नंबर कॉपी करें</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>सामान्य प्रश्न</h2>
+                <p>हमारे फोन नंबर जनरेटर के बारे में अक्सर पूछे जाने वाले प्रश्न</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>क्या जनरेट किए गए फोन नंबर वास्तविक हैं?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>नहीं, हमारे जनरेट किए गए फोन नंबर केवल देश-विशिष्ट फॉर्मेट नियमों का पालन करते हैं, ये वास्तव में आवंटित नंबर नहीं हैं। ये नंबर केवल परीक्षण, विकास और डेमो उद्देश्यों के लिए हैं।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>क्या मैं इन नंबरों का व्यावसायिक उद्देश्यों के लिए उपयोग कर सकता/सकती हूँ?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हाँ, आप जनरेट किए गए नंबरों को परीक्षण, विकास, डेमो और अन्य गैर-धोखाधड़ी व्यावसायिक उद्देश्यों के लिए उपयोग कर सकते हैं।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>मुझे रैंडम फोन नंबरों की आवश्यकता क्यों होगी?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>रैंडम फोन नंबर सॉफ़्यवेयर परीक्षण, UI/UX डिज़ाइन, डेटाबेस पॉपुलेशन, डेमो और प्रशिक्षण सामग्री में उपयोगी हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Phone<span>Gen</span></h2>
+                    <p>डेवलपर्स और टेस्टर्स के लिए सुविधाजनक फोन नंबर जनरेशन टूल्स प्रदान करना</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>नेविगेशन</h3>
+                        <ul>
+                            <li><a href="#">होम</a></li>
+                            <li><a href="#features">फ़ीचर्स</a></li>
+                            <li><a href="#how-it-works">यह कैसे काम करता है</a></li>
+                            <li><a href="#faq">सामान्य प्रश्न</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>कानूनी</h3>
+                        <ul>
+                            <li><a href="#">प्राइवेसी पॉलिसी</a></li>
+                            <li><a href="#">टर्स ऑफ़ यूज़</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PhoneGen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
