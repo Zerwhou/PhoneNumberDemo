@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Online Phone Number Generator - Generate random phone numbers for testing, development and demos">
+    <meta name="keywords" content="phone number generator, random phone numbers, test numbers, virtual phone numbers">
+    <title>PhoneGen - Free Online Phone Number Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Phone<span>Gen</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Generate Random Phone Numbers<br>for Any Country</h2>
+                <p>Quickly create formatted phone numbers for testing, development, and demonstrations</p>
+                <div class="cta-buttons">
+                    <a href="#generator" class="btn primary-btn">Start Generating</a>
+                    <a href="#how-it-works" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-illustration"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="generator" class="generator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Phone Number Generator</h2>
+                <p>Select country and quantity to instantly generate formatted random phone numbers</p>
+            </div>
+            <div class="generator-form">
+                <div class="form-group">
+                    <label for="country">Country/Region</label>
+                    <select id="country">
+                        <option value="CN">China (+86)</option>
+                        <option value="US">United States (+1)</option>
+                        <option value="GB">United Kingdom (+44)</option>
+                        <option value="JP">Japan (+81)</option>
+                        <option value="KR">South Korea (+82)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" min="1" max="50" value="5">
+                </div>
+                <div class="form-group">
+                    <label for="format">Format</label>
+                    <select id="format">
+                        <option value="INTERNATIONAL">International Format</option>
+                        <option value="NATIONAL">National Format</option>
+                        <option value="E164">E.164 Format</option>
+                    </select>
+                </div>
+                <button id="generate-btn" class="btn primary-btn">Generate Numbers</button>
+            </div>
+            <div class="result-container">
+                <div class="result-header">
+                    <h3>Results</h3>
+                    <button id="copy-all-btn" class="btn small-btn">Copy All</button>
+                </div>
+                <div id="result-list" class="result-list">
+                    <p class="empty-result">Click "Generate Numbers" button to start</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Our phone number generator offers multiple practical features</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon globe-icon"></div>
+                    <h3>Global Coverage</h3>
+                    <p>Supports phone number formats for multiple countries and regions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon format-icon"></div>
+                    <h3>Multiple Formats</h3>
+                    <p>Supports international, national, and E.164 formats</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon valid-icon"></div>
+                    <h3>Format Validation</h3>
+                    <p>Generated numbers comply with country-specific phone number rules</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon copy-icon"></div>
+                    <h3>One-Click Copy</h3>
+                    <p>Easily copy individual numbers or all results at once</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Generate the phone numbers you need in just three easy steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select Country</h3>
+                    <p>Choose your desired country or region from the dropdown menu</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Set Quantity and Format</h3>
+                    <p>Choose how many numbers to generate and in which format</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Generate and Use</h3>
+                    <p>Click the generate button and copy the numbers you need</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our phone number generator</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the generated phone numbers real?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, our generated phone numbers only comply with country-specific format rules but are not actually assigned numbers. These numbers are for testing, development, and demonstration purposes only.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I use these numbers for commercial purposes?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can use the generated numbers for testing, development, demonstrations, and other non-fraudulent commercial purposes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Why would I need random phone numbers?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Random phone numbers are useful in software testing, UI/UX design, database population, demonstrations, and training materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Phone<span>Gen</span></h2>
+                    <p>Providing convenient phone number generation tools for developers and testers</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PhoneGen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/libphonenumber-js.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
